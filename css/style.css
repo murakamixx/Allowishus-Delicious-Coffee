@@ -22,6 +22,10 @@ a {
   text-align: left;
 }
 
+a:hover {
+  text-decoration: underline;
+}
+
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -309,6 +313,13 @@ a {
           justify-content: center;
   gap: 30px;
 }
+.explore .cards__element:hover {
+  -webkit-transform: translateY(-20px);
+      -ms-transform: translateY(-20px);
+          transform: translateY(-20px);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
 .explore .cards__element {
   padding-top: 40px;
   padding-bottom: 40px;
@@ -331,6 +342,8 @@ a {
   -webkit-box-shadow: 0px 30px 60px 0px rgba(163, 168, 179, 0.15);
           box-shadow: 0px 30px 60px 0px rgba(163, 168, 179, 0.15);
   background: linear-gradient(135deg, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0) 100%);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 .explore .cards__header {
   color: rgb(27, 27, 29);
@@ -523,7 +536,16 @@ a {
   display: flex;
   gap: 31px;
 }
+.bestSellings .bestSellings__container .container__card:hover {
+  -webkit-transform: translateY(-20px);
+      -ms-transform: translateY(-20px);
+          transform: translateY(-20px);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
 .bestSellings .bestSellings__container .container__card {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1815,7 +1837,10 @@ a {
   .contacts .contacts__up .up__description .description__text {
     width: 70vw;
   }
-  .contacts .contacts__up .up__social .social__header, .contacts .contacts__up .up__social .up__email, .contacts .contacts__up .up__social .up__phone, .contacts .contacts__up .up__social .up__networks {
+  .contacts .contacts__up .up__social .social__header,
+  .contacts .contacts__up .up__social .up__email,
+  .contacts .contacts__up .up__social .up__phone,
+  .contacts .contacts__up .up__social .up__networks {
     -ms-flex-item-align: center;
         align-self: center;
     width: 80vw;
